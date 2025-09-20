@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOODLE Menu</title>
+    <link href="potrebni_fajlovi/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jelovnik.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="potrebni_fajlovi/jquery-3.7.0.min.js"></script>
+    <script src="potrebni_fajlovi/bootstrap.bundle.min.js"></script>
+    <script src="js/jelovnik.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="header" class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <a href="index_engleski.html" class="navbar-brand">
+                        <img src="slike/slika_logo.jpg" alt="Logo">
+						<span class="navbar-brand-name">NOODLE</span>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li hidden="hidden" class="breadcrumb-item"><a href="index_srpski.html">Početna</a></li>
+								<li class="breadcrumb-item"><a href="index_engleski.html">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Menu</li>
+							</ol>
+						</nav>
+                    </a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index_engleski.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="galerija_engleski.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="jelovnik_engleski.html" class="nav-link dropdown-toggle" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="predjela_engleski.html">Appetizers</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Spring Rolls</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Chinese Noodles</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Shrimp Salad</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Chicken Dumplings</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Meat Patties</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Hot and Sour Soup</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="glavna_jela_engleski.html">Main Dishes</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Chicken with Peanuts</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Pork with Leeks</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Mixed Vegetables</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Tofu Cooked with Five Spices and Pork</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Crispy Chicken in Sweet and Spicy Sauce</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Fried Cabbage in Sour and Spicy Sauce</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="dezerti_engleski.html">Desserts</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fried Ice Cream</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Banana Split</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fried Bananas</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Lemon Tart</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fortune Cookie</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Plum Dumplings</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="moj_nalog_engleski.html" class="nav-link">My Account</a></li>
+                        <li class="nav-item"><a href="o_nama_engleski.html" class="nav-link">About Us</a></li>
+                    </ul>
+                    <div class="dropdown dropdownj">
+                        <button class="btn btn-link nav-link dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="jelovnik_srpski.html">Srpski</a></li>
+                            <li><a class="dropdown-item" href="jelovnik_engleski.html">English</a></li>
+                            <!-- Add more languages as needed -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" id="meni">
+                Menu
+            </div>
+			<div class="col-sm-12" id="meni">
+                <a href="jelovnici/Menu.pdf" target="_blank">
+                    <button class="btn btn-success" onclick="preuzmimeni()">Get Menu</button>
+                </a>
+            </div>
+        </div>
+        <div class="row" id="red">
+            <div class="row">
+                <div class="col-sm-12" id="naslov">
+                    Appetizers
+                </div>
+            </div>
+            <div class="row" id="red-slike">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/spring-rolls-with-dipping-sauces-scaled.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Spring Rolls</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/chinese-noodles.jpeg">
+                        <div class="card-body">
+                            <h4 class="card-title">Chinese Noodles</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/shrimp-salad.jpeg">
+                        <div class="card-body">
+                            <h4 class="card-title">Shrimp Salad</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success" onclick="goToPredjela_eng()">View Full Menu</button>
+        </div>
+        <div class="row" id="red2">
+            <div class="row">
+                <div class="col-sm-12" id="title">
+                    Main Courses
+                </div>
+            </div>
+            <div class="row" id="red-slike">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/chicken-with-peanuts.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Chicken with Peanuts</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/pork-with-leek.png">
+                        <div class="card-body">
+                            <h4 class="card-title">Pork with Leek</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/mixed-vegetables.jpeg">
+                        <div class="card-body">
+                            <h4 class="card-title">Mixed Vegetables</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success" onclick="goToGlavnaJela_eng()">View Full Menu</button>
+        </div>
+        <div class="row" id="red2" style="margin-bottom: 40px;">
+            <div class="row">
+                <div class="col-sm-12" id="title">
+                    Desserts
+                </div>
+            </div>
+            <div class="row" id="red-slike">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/fried-ice-cream.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Fried Ice Cream</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/banana-split.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Banana Split</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="koriscene_slike/fried-bananas.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Fried Bananas</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success" onclick="goToDezerti_eng()">View Full Menu</button>
+        </div>
+    </div>
+    <footer class="text-black text-center py-3">
+        <div class="containerf">
+            <p class="mb-0">&copy; 2024 Mia Marjanović, Hana Mijatović. Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade.</p>
+        </div>
+    </footer>
+</body>
+</html>

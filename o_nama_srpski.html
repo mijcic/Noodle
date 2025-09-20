@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOODLE O nama</title>
+    <link href="potrebni_fajlovi/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_o_nama.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="potrebni_fajlovi/jquery-3.7.0.min.js"></script>
+    <script src="potrebni_fajlovi/bootstrap.bundle.min.js"></script>
+    <script src=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="header" class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <a href="index_srpski.html" class="navbar-brand">
+                        <img src="slike/slika_logo.jpg" alt="Logo">
+                        <span class="navbar-brand-name">NOODLE</span>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li hidden="hidden" class="breadcrumb-item"><a href="index_srpski.html">Početna</a></li>
+								<li class="breadcrumb-item"><a href="index_srpski.html">Početna</a></li>
+								<li class="breadcrumb-item active" aria-current="page">O nama</li>
+							</ol>
+						</nav>
+                    </a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index_srpski.html" class="nav-link">Početna</a></li>
+                        <li class="nav-item"><a href="galerija_srpski.html" class="nav-link">Galerija</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="jelovnik_srpski.html" class="nav-link" id="jelovnikDropdown">Jelovnik</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="jelovnikDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="predjela_srpski.html">Predjela</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="predjela_srpski.html">Prolećne rolnice</a></li>
+                                        <li><a class="dropdown-item" href="predjela_srpski.html">Kineski rezanci</a></li>
+                                        <li><a class="dropdown-item" href="predjela_srpski.html">Salata sa škampima</a></li>
+                                        <li><a class="dropdown-item" href="predjela_srpski.html">Pileći dumplings</a></li>
+                                        <li><a class="dropdown-item" href="predjela_srpski.html">Šnicle od mlevenog mesa</a></li>
+                                        <li><a class="dropdown-item" href="predjela_srpski.html">Kiselo-ljuta čorba</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="glavna_jela_srpski.html">Glavna jela</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="glavna_jela_srpski.html">Piletina sa kikirikijem</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_srpski.html">Svinjetina sa prazilukom</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_srpski.html">Mešano povrće</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_srpski.html">TOFU kuvan u 5 začina sa svinjetinom</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_srpski.html">Hrskava piletina u slatko-ljutom sosu</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_srpski.html">Prženi kupus u kiselo-ljutom sosu</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="dezerti_srpski.html">Dezerti</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="dezerti_srpski.html">Pohovani sladoled</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_srpski.html">Banana split</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_srpski.html">Pohovane banane</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_srpski.html">Tart od limuna</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_srpski.html">Kolačić sreće</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_srpski.html">Knedle sa šljivama</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="moj_nalog_srpski.html" class="nav-link">Moj nalog</a></li>
+                        <li class="nav-item"><a href="o_nama_srpski.html" class="nav-link">O nama</a></li>
+                    </ul>
+                    <div class="dropdown dropdownj">
+                        <button class="btn btn-link nav-link dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="o_nama_srpski.html">Srpski</a></li>
+                            <li><a class="dropdown-item" href="o_nama_engleski.html">English</a></li>
+                            <!-- Add more languages as needed -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="main-content row">
+            <div class="col-md-9 col-sm-12">
+                <div class="container text-center">
+                    <h1 class="mb-4">O nama</h1>
+                    <hr style="height:4px;">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="lead2">
+                        Dobrodošli u naš restoran NOODLE. Mi smo posvećeni pružanju najbolje kulinarske usluge koristeći najkvalitetnije sastojke.<br>
+                        Naša priča počinje pre 50 godina kada smo odlučili da spojimo tradicionalne recepte sa modernim tehnikama kuvanja. Naš tim čine iskusni kuvari i osoblje posvećeno pružanju najboljeg iskustva za naše goste. <br>
+                        Naš sajt je sertifikovan od strane vodećih organizacija za bezbednost i kvalitet, što garantuje da naši gosti dobijaju najviši nivo usluge.<br>
+                        Osvojili smo brojne nagrade za našu hranu i uslugu, uključujući nagrade za najbolji restoran u regionu.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="slike/o_nama_slika1.jpg" class="img-fluid" alt="Noodle Restaurant">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row no-overlap">
+            <div class="col-md-2 banner">Banner</div>
+            <div class="col-md-8">
+                <div class="container">
+                    <div class="row">
+                        <hr style="height:4px;">
+                        <h2 class="text-center">Naša postignuća</h2>
+                        <hr>
+                        <div class="col-md-6">
+                            <h3 class="lead">Najbolji restoran u regionu - 2021</h3>
+                            <img src="slike/achievment1.jpg" class="img-fluid" alt="Achievement 1">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="lead">Sertifikat za kvalitet hrane - 2020</h3>
+                            <img src="slike/achievment2.jpg" class="img-fluid" alt="Achievement 2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="lead">Najbolji web sajt - 2019</h3>
+                            <img src="slike/achievment3.jpg" class="img-fluid" alt="Achievement 3">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="lead">Zlatna nagrada za bezbednost sajta - 2018</h3>
+                            <img src="slike/achievment4.jpg" class="img-fluid" alt="Achievement 4">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="container" id="mapa">
+                    <h2 class="text-center">Naša lokacija</h2>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.773763608681!2d20.473859277166476!3d44.80579907107075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9f59af917f%3A0xf9b50e9f0114cb72!2sElektrotehni%C4%8Dki%20fakultet%2C%2073%2C%20Beograd!5e0!3m2!1sen!2srs!4v1718646682388!5m2!1sen!2srs" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="container" id="telefon">
+                    <h3 class="text-center">Kontakt telefon: 06122518100</h3>
+                </div>
+            </div>
+            <div class="col-md-2 banner">Banner</div>
+        </div>
+    </div>
+    <footer class="text-black text-center py-3">
+        <div class="containerf">
+            <p class="mb-0">&copy; 2024 Mia Marjanović, Hana Mijatović. Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdowns = document.querySelectorAll('.dropdown, .dropdown-submenu');
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener('mouseenter', function () {
+                    var menu = this.querySelector('.dropdown-menu');
+                    if (menu) {
+                        menu.classList.add('show');
+                    }
+                });
+                dropdown.addEventListener('mouseleave', function () {
+                    var menu = this.querySelector('.dropdown-menu');
+                    if (menu) {
+                        menu.classList.remove('show');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

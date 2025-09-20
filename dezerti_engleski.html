@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOODLE Desserts</title>
+    <link href="potrebni_fajlovi/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dezert.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="potrebni_fajlovi/jquery-3.7.0.min.js"></script>
+    <script src="potrebni_fajlovi/bootstrap.bundle.min.js"></script>
+    <script src="js/dezert.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <div id="header" class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <a href="index_engleski.html" class="navbar-brand">
+                        <img src="slike/slika_logo.jpg" alt="Logo">
+						<span class="navbar-brand-name">NOODLE</span>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li hidden="hidden" class="breadcrumb-item"><a href="index_srpski.html">Početna</a></li>
+								<li class="breadcrumb-item"><a href="index_engleski.html">Home</a></li>
+								<li class="breadcrumb-item"><a href="jelovnik_engleski.html">Menu</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Desserts</li>
+							</ol>
+						</nav>
+                    </a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index_engleski.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="galerija_engleski.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="jelovnik_engleski.html" class="nav-link dropdown-toggle" id="jelovnikDropdown" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                            <ul class="dropdown-menu" aria-labelledby="jelovnikDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="predjela_engleski.html">Appetizers</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Spring Rolls</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Chinese Noodles</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Shrimp Salad</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Chicken Dumplings</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Meat Patties</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Hot and Sour Soup</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="glavna_jela_engleski.html">Main Dishes</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Chicken with Peanuts</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Pork with Leeks</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Mixed Vegetables</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Tofu Cooked with Five Spices and Pork</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Crispy Chicken in Sweet and Spicy Sauce</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Fried Cabbage in Sour and Spicy Sauce</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="dezerti_engleski.html">Desserts</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fried Ice Cream</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Banana Split</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fried Bananas</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Lemon Tart</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fortune Cookie</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Plum Dumplings</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="moj_nalog_engleski.html" class="nav-link">My Account</a></li>
+                        <li class="nav-item"><a href="o_nama_engleski.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item dropdown dropdownj">
+                            <button class="btn btn-link nav-link dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item" href="dezerti_srpski.html">Srpski</a></li>
+                                <li><a class="dropdown-item" href="dezerti_engleski.html">English</a></li>
+                                <!-- Add more languages as needed -->
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="container" class="flex-grow-1">
+            <div class="row">
+                <div class="col-sm-12" id="meni">
+                    Desserts
+                </div>
+            </div>
+
+            <div class="row" id="pretraga-div">
+                <div class="col-sm-9" id="pretraga">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                    <input type="text" placeholder="Search for a dish by name or price" id="pretraga-input">
+                </div>
+				<div class="col-sm-3">
+					<a href="jelovnici/Menu.pdf" target="_blank">
+                        <button class="btn btn-success" onclick="preuzmimeni()">Get Menu</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row" id="red">
+                <div class="col-sm-1" id="sortiranje">
+                    <label id="sortirajPrema">Sort by:</label>
+
+                    <select id="sortiranjeNaziv" style="margin-top: 5px;">
+                        <option value="nothing">Name</option>
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                    
+                    <select id="sortiranjeCena" style="margin-top: 10px;">
+                        <option value="nothing">Price</option>
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                </div>
+                <div class="col-sm-11" id="slike">
+                    <table id="myTable"> </table>
+                </div>
+            </div>
+        </div>
+        <footer class="text-black text-center py-3">
+            <div class="containerf">
+                <p class="mb-0">&copy; 2024 Mia Marjanović, 
+                Hana Mijatović. Department of Software Engineering, Faculty of Electrical Engineering 
+                University of Belgrade.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

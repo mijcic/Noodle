@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOODLE My account</title>
+    <script type="text/javascript">
+        	var korisnik = JSON.parse(localStorage.getItem('korisnik')) || '';
+		if ( korisnik=='')
+			window.location.href = "prijavljivanje_engleski.html";
+		else
+			window.location.href = "korpa_engleski.html";
+    </script>
+</head>
+<body>
+</body>
+</html>

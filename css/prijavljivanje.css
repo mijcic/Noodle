@@ -1,0 +1,285 @@
+body {
+    background-color: rgb(250,235,215);
+    font-family: Poppins;
+	min-height:90vh;
+	
+}
+
+#container {
+	min-height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column; /* Ensure that elements inside are stacked vertically */
+    padding-top: 10px; /* Add top padding to avoid overlap with the fixed navbar */
+}
+
+#prijavljivanje {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: max-content;
+}
+
+#prijavljivanjeLabel {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#dugme {
+    width: max-content;
+    margin-top: 10px;
+    align-self: center;
+    border-radius: 12px;
+    background-color: rgb(255,160,137);
+    color: white;
+}
+
+#link {
+    align-self: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/*navbar*/
+
+
+.breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin: 0; /* Adjust margin as needed */
+            font-size: 14px; /* Adjust font size as needed */
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+            color: #6c757d;
+            padding: 0 5px;
+        }
+        .breadcrumb-item a {
+            color: #007bff;
+            text-decoration: none;
+			margin-bottom:5px;
+        }
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb-item.active {
+            color: #6c757d;
+        }
+
+
+
+.navbar-brand-name {
+        font-family: Poppins, sans-serif;
+        margin-left: 10px;
+		font-weight:bold;
+    }
+	
+	
+#header {
+    width: 100%;
+    background-color: #F2D9A6;
+    padding: 0;
+    margin: 0;
+    /*position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align it to the left edge */
+    z-index: 1000; /* Ensure it stays above other elements */
+    border-bottom: 1px solid #eaeaea;
+}
+
+#languageDropdown {
+    margin-bottom: 8px;
+}
+
+#languageDropdown:hover {
+    background-color: #CEAA61;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link {
+    background-color: #DD9A14;
+    color: white; /* Change this to your desired color */
+}
+
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+    background-color: #CEAA61;
+    color: black; /* Change this to your desired color */
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 5px; /* Reduce the margin to move the items closer */
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 5px 6px; /* Adjust padding to reduce overall space */
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+    background-color: #CEAA61;
+}
+
+.dropdown .nav-link {
+    color: black;
+    background-color: #F2D9A6;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 0px;
+    margin-right: 5px;
+}
+
+.dropdownj {
+    margin-right: 0; /* Remove additional right margin */
+}
+
+.dropdown-menu {
+    min-width: 100px;
+    background-color: #F2D9A6;
+}
+
+.dropdown-item {
+    background-color: #F2D9A6;
+}
+
+.dropdown-item:hover {
+    background-color: #CEAA61;
+}
+.dropdown-submenu:hover {
+    background-color: #CEAA61;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    background-color: #F2D9A6;
+}
+
+.dropdown-submenu > a::after {
+    content: " ▸";
+    float: right;
+    margin-left: 5px;
+}
+
+.dropdown-submenu:hover > a::after {
+    content: " ▾";
+}
+
+.dropdown-menu > .dropdown-submenu > a::after {
+    display: none;
+}
+
+.dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    background-color: #F2D9A6;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu-end {
+        left: auto !important;
+        right: 0 !important;
+    }
+    .dropdown-submenu > .dropdown-menu {
+        left: auto !important;
+        right: 100% !important;
+    }
+}
+
+/* Adjust Dropdown Positioning for Large Screens */
+@media (min-width: 768px) {
+    .dropdown-menu-end {
+        right: auto !important;
+        left: -50px !important; /* Adjust to bring the dropdown menu more to the left */
+    }
+}
+
+/*kraj navbar-a*/
+
+/* Footer Styles */
+footer {
+    overflow: auto;
+    background-color: #F2D9A6; /* Same background color as navbar */
+    width: 100%;
+    text-align: center;
+    font-weight: bold; /* Bold font */
+    border-top: 1px solid #eaeaea; /* Optional: adds a top border for separation */
+    /*position: absolute; /* Make footer position absolute */
+    bottom: 0; /* Align it to the bottom of the page */
+}
+
+footer .containerf {
+    background-color: inherit; /* Inherit the background color from the footer */
+    padding: 0; /* Remove padding if needed */
+}
+
+footer p {
+    background-color: #F2D9A6;
+    margin: 0;
+    font-size: 18px;
+}

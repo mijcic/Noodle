@@ -1,0 +1,453 @@
+/* General Styles */
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-fluid {/*glavni kontejner*/
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* pocetak navbara*/
+
+
+.breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin: 0; /* Adjust margin as needed */
+            font-size: 14px; /* Adjust font size as needed */
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+            color: #6c757d;
+            padding: 0 5px;
+        }
+        .breadcrumb-item a {
+            color: #007bff;
+            text-decoration: none;
+			margin-bottom:5px;
+        }
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb-item.active {
+            color: #6c757d;
+        }
+
+
+
+#header {
+    width: 100%;
+    background-color: #F2D9A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#languageDropdown:hover{
+	background-color: #CEAA61;
+	
+}
+
+.main-content.row {
+    background-image: url('../slike/slika_index_pozadina.jpg'); /* Correct path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Ensure text is visible against the background image */ /* Optional: add some padding if needed */
+    width: 100vw;
+    height: auto; /* Adjust the height as needed */
+    min-height: 100vh; /* Ensure the div takes up the full viewport height */
+}
+.navbar-nav .nav-item:first-child .nav-link {
+    background-color: #DD9A14;
+	color:white;	/* Change this to your desired color */
+}
+
+.navbar-nav .nav-item:first-child .nav-link:hover {
+    background-color: #CEAA61;
+	color:black;	/* Change this to your desired color */
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 5px; /* Reduce the margin to move the items closer */
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 5px 6px; /* Adjust padding to reduce overall space */
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+    background-color: #CEAA61;
+}
+
+.dropdown .nav-link {
+    color: black;
+	background-color: #F2D9A6;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 0px;
+    margin-right: 5px;
+}
+
+.dropdownj {
+    margin-right: 0; /* Remove additional right margin */
+}
+
+.dropdown-menu {
+    min-width: 100px;
+	background-color: #F2D9A6;
+}
+
+.dropdown-item {
+    background-color: #F2D9A6;
+}
+
+.dropdown-item:hover {
+    background-color: #CEAA61;
+}
+.dropdown-submenu:hover{
+    background-color: #CEAA61;
+}
+.dropdown-submenu:hover{
+   background-color: #CEAA61;
+}
+
+.dropdown-submenu{
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+	background-color: #F2D9A6;
+}
+
+.dropdown-submenu > a::after {
+    content: " ▸";
+    float: right;
+    margin-left: 5px;
+}
+
+.dropdown-submenu:hover > a::after {
+    content: " ▾";
+}
+
+.dropdown-menu > .dropdown-submenu > a::after {
+    display: none;
+}
+
+.dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+	background-color: #F2D9A6;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#header {
+    border-bottom: 1px solid #eaeaea;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu-end {
+        left: auto !important;
+        right: 0 !important;
+    }
+    .dropdown-submenu > .dropdown-menu {
+        left: auto !important;
+        right: 100% !important;
+    }
+}
+
+/* Adjust Dropdown Positioning for Large Screens */
+@media (min-width: 768px) {
+    .dropdown-menu-end {
+        right: auto !important;
+        left: -50px !important; /* Adjust to bring the dropdown menu more to the left */
+    }
+}
+
+.navbar-brand-name {
+        font-family: Poppins, sans-serif;
+        margin-left: 10px;
+		font-weight:bold;
+    }
+
+/*kraj navbar-a*/
+
+/*ispod navbara kontejner jedan za glavnu sliku i tekst */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+	text-align:center;
+	font-family: Poppins, sans-serif;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+	font-weight: bold;
+	text-shadow: 4px 4px 8px #000000,4px 4px 8px #000000,4px 4px 8px #000000;
+}
+
+.lead {
+	font-family: Poppins, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+	font-weight: bold;
+	text-shadow:4px 4px 8px #000000,4px 4px 8px #000000,4px 4px 8px #000000,4px 4px 8px #000000,4px 4px 8px #000000,4px 4px 8px #000000;
+    line-height: 1.6;
+    text-wrap: wrap;
+}
+
+hr {
+	border:none;
+	size: "10";
+    margin: 20px auto;
+	color:white;
+	background-color: white;
+	text-shadow: 3px 3px 3px #000000;
+	opacity: 1.0;
+	width: 300px; 
+	height: 300px; 
+}
+
+/*kraj tog main content div-a*/
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+	overflow:auto;
+    background-color: #F2D9A6;/* Same background color as navbar */
+    width: 100%;
+    text-align: center;
+    font-weight: bold; /* Bold font */
+    border-top: 1px solid #eaeaea; /* Optional: adds a top border for separation ** Optional: adds a top border for separation */
+}
+
+footer .containerf {
+    background-color: inherit; /* Inherit the background color from the footer */
+    padding: 0; /* Remove padding if needed */
+}
+
+footer p {
+	background-color: #F2D9A6;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* za ponude stilovi*/
+.special-offers {
+            background-image: url('../slike/ponude_index_pozadina.jpeg');
+			border:20px solid white;
+            background-size: cover;
+            background-position: center;
+            padding: 40px 0;
+            color: white;
+			margin-top:1%;
+			margin-left:1%;
+			margin-right:1%;
+			margin-bottom:1%;
+            text-align: center;
+            gap: 40px;
+        }
+        .special-offers .offer {
+             background-color: rgba(255, 255, 255, 0.5);
+			padding: 20px;
+			margin: 10px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			border: 1px solid #eaeaea;
+        }
+        .special-meals {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .special-meals h2 {
+            margin-bottom: 40px;
+        }
+        .special-meals .meal {
+            margin-bottom: 20px;
+        }
+        .btn-purchase {
+            background-color: rgb(205,87,0);
+            color: white;
+            font-weight: bold;
+        }
+		
+
+.special-offers h1 {
+   font-family: Poppins, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.special-offers h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+	color:black;
+}
+
+.special-offers h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+	color:black;
+}
+
+.special-offers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+	color:black;
+}
+
+.special-offers li {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+	color:black;
+    margin-bottom: 10px;
+}
+
+.btn-purchase {
+    background-color: rgb(205,87,0);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-purchase:hover {
+    background-color: white;
+    color: rgb(205,87,0);
+    border: 2px solid rgb(205,87,0);
+}
+
+/* za obroke ove nedelje stilovi*/
+
+		
+.container.special-meals img {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin-bottom: 15px; /* Space below each image */
+    width: 100%; /* Ensure images are responsive */
+    height: 250px; /* Maintain aspect ratio */
+}
+
+.container.special-meals h2{
+	font-family: Poppins, sans-serif;
+	font-size: 40px;
+}
+
+.container.special-meals h3{
+	font-family: Poppins, sans-serif;
+	font-size: 25px;
+}
+
+.col-md-4.meal{
+	font-size:20px;
+	font-family: Poppins, sans-serif;
+}
+
+
+.old-price {
+    text-decoration: line-through;
+    color: red; /* Optional: color to indicate it's the old price */
+    margin-right: 10px; /* Spacing between old and new price */
+	font-size:20px;
+	font-family: Poppins, sans-serif;
+}
+
+.new-price {
+    color: green; /* Optional: color to indicate it's the new price */
+    font-weight: bold; /* Make the new price bold */
+	font-size:20px;
+	font-family: Poppins, sans-serif;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tekst {
+    font-style: italic;
+}
+
+.tekstValue {
+    margin-bottom: 10px;
+    vertical-align: middle;
+    font-weight: 700;
+    color: rgb(54,117,136);
+} 

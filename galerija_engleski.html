@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOODLE Gallery</title>
+    <link href="potrebni_fajlovi/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_galerija.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="potrebni_fajlovi/jquery-3.7.0.min.js"></script>
+    <script src="potrebni_fajlovi/bootstrap.bundle.min.js"></script>
+    <script src="js/galerija.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="header" class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <a href="index_engleski.html" class="navbar-brand">
+                        <img src="slike/slika_logo.jpg" alt="Logo">
+						<span class="navbar-brand-name">NOODLE</span>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li hidden="hidden" class="breadcrumb-item"><a href="index_srpski.html">Početna</a></li>
+								<li class="breadcrumb-item"><a href="index_engleski.html">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Galerry</li>
+							</ol>
+						</nav>
+                    </a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index_engleski.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="galerija_engleski.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="jelovnik_engleski.html" class="nav-link" id="jelovnikDropdown">Menu</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="jelovnikDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="predjela_engleski.html">Appetizers</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Spring Rolls</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Chinese Noodles</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Shrimp Salad</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Chicken Dumplings</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Meat Patties</a></li>
+                                        <li><a class="dropdown-item" href="predjela_engleski.html">Hot and Sour Soup</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="glavna_jela_engleski.html">Main Dishes</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Chicken with Peanuts</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Pork with Leeks</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Mixed Vegetables</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Tofu Cooked with Five Spices and Pork</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Crispy Chicken in Sweet and Spicy Sauce</a></li>
+                                        <li><a class="dropdown-item" href="glavna_jela_engleski.html">Fried Cabbage in Sour and Spicy Sauce</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="dezerti_engleski.html">Desserts</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fried Ice Cream</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Banana Split</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fried Bananas</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Lemon Tart</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Fortune Cookie</a></li>
+                                        <li><a class="dropdown-item" href="dezerti_engleski.html">Plum Dumplings</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="moj_nalog_engleski.html" class="nav-link">My Account</a></li>
+                        <li class="nav-item"><a href="o_nama_engleski.html" class="nav-link">About Us</a></li>
+                    </ul>
+                    <div class="dropdown dropdownj">
+                        <button class="btn btn-link nav-link dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="galerija_srpski.html">Srpski</a></li>
+                            <li><a class="dropdown-item" href="galerija_engleski.html">English</a></li>
+                            <!-- Add more languages as needed -->
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main-content row">
+            <div class="col-md-9 col-sm-12">
+                <div class="container text-center">
+                    <h1 class="mb-4" style="padding-bottom: 20px;">NOODLE Restaurant</h1>
+                    <h3 class="lead">Image Gallery</h3>
+                </div>
+            </div>
+        </div>
+        <div id="galleryCarousel" class="carousel slide container gallery" data-bs-ride="carousel">
+            <h2>Space</h2>
+            <hr>
+            <h3>Besides the main part, the restaurant also has summer and winter gardens, <br> making it suitable for all types of celebrations and gatherings!</h3>
+            <div class="carousel-inner">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev" id="leftButton1" onclick="prvolevo()">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next" id="rightButton1" onclick="prvodesno()">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="galleryCarousel1" class="carousel slide container gallery" data-bs-ride="carousel">
+            <h2>Kitchen and Staff</h2>
+            <div class="carousel-inner">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="prev" id="leftButton2" onclick="drugolevo()">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel1" data-bs-slide="next" id="rightButton2" onclick="drugodesno()">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container videos">
+            <h2>Video Clips</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <video controls class="img-fluid">
+                        <source src="videi/video1.mp4" type="video/mp4">
+                        Your browser does not support the HTML5 video tag.
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <video controls class="img-fluid">
+                        <source src="videi/video2.mp4" type="video/mp4">
+                        Your browser does not support the HTML5 video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-black text-center py-3">
+        <div class="containerf">
+            <p class="mb-0">&copy; 2024 Mia Marjanović, Hana Mijatović. Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdowns = document.querySelectorAll('.dropdown, .dropdown-submenu');
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener('mouseenter', function () {
+                    var menu = this.querySelector('.dropdown-menu');
+                    if (menu) {
+                        menu.classList.add('show');
+                    }
+                });
+                dropdown.addEventListener('mouseleave', function () {
+                    var menu = this.querySelector('.dropdown-menu');
+                    if (menu) {
+                        menu.classList.remove('show');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

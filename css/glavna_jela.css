@@ -1,0 +1,462 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../koriscene_slike/second-background.jpeg);
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: Poppins, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#meni {
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+.card {
+    width: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    --bs-card-border-width: 0;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 30px;
+}
+
+.card img {
+    width: 350px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+    width: max-content;
+    background-color: white;
+    color: darkgreen;
+}
+
+#slike {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	margin-bottom:30px;
+	margin-top:10px;	
+}
+
+#sortiranje {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: max-content;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(248,248,255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#sortirajPrema {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#sortiranjeNaziv{
+	margin-top: 5px;
+	max-width:100%;
+}
+
+#sortiranjeCena{
+	margin-top: 10px;
+	max-width:100%;
+}
+
+#pretraga {
+    display: flex; 
+    align-items: center;  
+    padding: 8px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#pretraga-div {
+    width: 30%; 
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#pretraga-input {
+    flex: 1; 
+    margin-left: 8px; 
+    border: none; 
+    outline: none; 
+    font-size: 14px; 
+    padding: 6px 10px;
+}
+
+td {
+    height: 300px;
+    width: 350px;
+}
+
+#myTable {
+    height: 600px;
+    width: 1200px;
+}
+
+.card-ingridient {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.card-price {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+    color: darkcyan;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* pocetak navbara*/
+
+.breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin: 0; /* Adjust margin as needed */
+            font-size: 14px; /* Adjust font size as needed */
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+            color: #6c757d;
+            padding: 0 5px;
+        }
+        .breadcrumb-item a {
+            color: #007bff;
+            text-decoration: none;
+			margin-bottom:5px;
+        }
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb-item.active {
+            color: #6c757d;
+        }
+		
+.navbar-brand-name {
+        font-family: Poppins, sans-serif;
+        margin-left: 10px;
+		font-weight:bold;
+    }
+	
+	
+#header {
+    width: 100%;
+    background-color: #F2D9A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#languageDropdown {
+	margin-bottom:8px;
+}
+
+#languageDropdown:hover {
+    background-color: #CEAA61;
+	color:black;
+	margin-bottom:8px;
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link {
+    background-color: #DD9A14;
+    color: white; /* Change this to your desired color */
+}
+
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+    background-color: #CEAA61;
+    color: black; /* Change this to your desired color */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-submenu:nth-child(2) > .dropdown-item {
+    background-color: #DD9A14;
+    color: white; /* Change this to your desired color */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-submenu:nth-child(2) > .dropdown-item:hover {
+    background-color: #CEAA61;
+    color: black; /* Change this to your desired color */
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 5px; /* Reduce the margin to move the items closer */
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 5px 6px; /* Adjust padding to reduce overall space */
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+	color:black;
+    background-color: #CEAA61;
+}
+
+.dropdown .nav-link {
+    color: black;
+    background-color: #F2D9A6;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 0px;
+    margin-right: 5px;
+}
+
+.dropdownj {
+    margin-right: 0; /* Remove additional right margin */
+}
+
+.dropdown-menu {
+    min-width: 100px;
+    background-color: #F2D9A6;
+}
+
+.dropdown-item {
+    background-color: #F2D9A6;
+}
+
+.dropdown-item:hover {
+    background-color: #CEAA61;
+}
+.dropdown-submenu:hover {
+    background-color: #CEAA61;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    background-color: #F2D9A6;
+}
+
+.dropdown-submenu > a::after {
+    content: " ▸";
+    float: right;
+    margin-left: 5px;
+}
+
+.dropdown-submenu:hover > a::after {
+    content: " ▾";
+}
+
+.dropdown-menu > .dropdown-submenu > a::after {
+    display: none;
+}
+
+.dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    background-color: #F2D9A6;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#header {
+    border-bottom: 1px solid #eaeaea;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu-end {
+        left: auto !important;
+        right: 0 !important;
+    }
+    .dropdown-submenu > .dropdown-menu {
+        left: auto !important;
+        right: 100% !important;
+    }
+}
+
+/* Adjust Dropdown Positioning for Large Screens */
+@media (min-width: 768px) {
+    .dropdown-menu-end {
+        right: auto !important;
+        left: -50px !important; /* Adjust to bring the dropdown menu more to the left */
+    }
+}
+
+/*kraj navbar-a*/
+
+/* Footer Styles */
+footer {
+    overflow: auto;
+    background-color: #F2D9A6; /* Same background color as navbar */
+    width: 100%;
+    text-align: center;
+    font-weight: bold; /* Bold font */
+    border-top: 1px solid #eaeaea; /* Optional: adds a top border for separation */
+}
+
+footer .containerf {
+    background-color: inherit; /* Inherit the background color from the footer */
+    padding: 0; /* Remove padding if needed */
+}
+
+footer p {
+    background-color: #F2D9A6;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* izmena */
+
+.btn-purchase {
+    background-color: darkcyan;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-purchase:hover {
+    background-color: #c88e06;
+}
+
+.tekst {
+    font-size: 20px;
+}
+
+.tekstValue {
+    margin-bottom: 10px;
+    vertical-align: middle;
+    font-weight: 700;
+    color: rgb(163,38,56);
+    font-size: 22px;
+} 
+
+.procecnaocena {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sltOceni {
+    width: max-content;
+}
+
+.OceniDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divSltOceni {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/* gotova izmena */

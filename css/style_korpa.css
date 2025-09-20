@@ -1,0 +1,355 @@
+/* General Styles */
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-fluid {/*glavni kontejner*/
+    padding: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* pocetak navbara*/
+
+.breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            margin: 0; /* Adjust margin as needed */
+            font-size: 14px; /* Adjust font size as needed */
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+            color: #6c757d;
+            padding: 0 5px;
+        }
+        .breadcrumb-item a {
+            color: #007bff;
+            text-decoration: none;
+			margin-bottom:5px;
+        }
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb-item.active {
+            color: #6c757d;
+        }
+
+.navbar-brand-name {
+        font-family: Poppins, sans-serif;
+        margin-left: 10px;
+		font-weight:bold;
+    }
+	
+	
+#header {
+    width: 100%;
+    background-color: #F2D9A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#languageDropdown:hover{
+	background-color: #CEAA61;
+	
+}
+
+.main-content.row {
+    /* Correct path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Ensure text is visible against the background image */ /* Optional: add some padding if needed */
+    width: 100vw;
+    height: auto; /* Adjust the height as needed */
+    min-height: 100vh; /* Ensure the div takes up the full viewport height */
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link {
+    background-color: #DD9A14;
+	color:white;	/* Change this to your desired color */
+}
+
+.navbar-nav .nav-item:nth-child(4).nav-link:hover {
+    background-color: #CEAA61;
+	color:black;	/* Change this to your desired color */
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 5px; /* Reduce the margin to move the items closer */
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 5px 6px; /* Adjust padding to reduce overall space */
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+    background-color: #CEAA61;
+}
+
+.dropdown .nav-link {
+    color: black;
+	background-color: #F2D9A6;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 0px;
+    margin-right: 5px;
+}
+
+.dropdownj {
+    margin-right: 0; /* Remove additional right margin */
+}
+
+.dropdown-menu {
+    min-width: 100px;
+	background-color: #F2D9A6;
+}
+
+.dropdown-item {
+    background-color: #F2D9A6;
+}
+
+.dropdown-item:hover {
+    background-color: #CEAA61;
+}
+.dropdown-submenu:hover{
+    background-color: #CEAA61;
+}
+.dropdown-submenu:hover{
+   background-color: #CEAA61;
+}
+
+.dropdown-submenu{
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+	background-color: #F2D9A6;
+}
+
+.dropdown-submenu > a::after {
+    content: " ▸";
+    float: right;
+    margin-left: 5px;
+}
+
+.dropdown-submenu:hover > a::after {
+    content: " ▾";
+}
+
+.dropdown-menu > .dropdown-submenu > a::after {
+    display: none;
+}
+
+.dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+	background-color: #F2D9A6;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#header {
+    border-bottom: 1px solid #eaeaea;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu-end {
+        left: auto !important;
+        right: 0 !important;
+    }
+    .dropdown-submenu > .dropdown-menu {
+        left: auto !important;
+        right: 100% !important;
+    }
+}
+
+/* Adjust Dropdown Positioning for Large Screens */
+@media (min-width: 768px) {
+    .dropdown-menu-end {
+        right: auto !important;
+        left: -50px !important; /* Adjust to bring the dropdown menu more to the left */
+    }
+}
+
+/*kraj navbar-a*/
+
+
+
+
+/*kraj tog main content div-a*/
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+	overflow:auto;
+    background-color: #F2D9A6;/* Same background color as navbar */
+    width: 100%;
+    text-align: center;
+    font-weight: bold; /* Bold font */
+    border-top: 1px solid #eaeaea; /* Optional: adds a top border for separation ** Optional: adds a top border for separation */
+}
+
+footer .containerf {
+    background-color: inherit; /* Inherit the background color from the footer */
+    padding: 0; /* Remove padding if needed */
+}
+
+footer p {
+	background-color: #F2D9A6;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* za ponude stilovi*/
+
+
+.korpa {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .element-korpe {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .slika-i-ime {
+            display: flex;
+            align-items: center;
+        }
+        .slika-i-ime img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .dugmici {
+            display: flex;
+            align-items: center;
+        }
+        .dugmici button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        .dugmici button:hover {
+            background-color: #ccc;
+        }
+        .number {
+            margin: 0 10px;
+        }
+		
+.narudzbine {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .narudzbina {
+			width:100%;
+			background-color: rgb(201,255,229);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .narudzbina h4 {
+            margin: 5px 0;
+        }
+        .narudzbina h2 {
+            color: rgb(25,25,112);
+            font-weight: 600;
+        }
+
+.odj {
+    display: flex;
+    justify-content: center;
+}
+
+#odjava, #finaliziraj {
+    background-color: darkcyan;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#odjava:hover, #finaliziraj:hover {
+    background-color: white;
+    color: darkcyan;
+    border: 2px solid darkcyan;
+}
